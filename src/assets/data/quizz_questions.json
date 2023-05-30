@@ -1,55 +1,92 @@
 {
-  "title":"Você seria um heroi ou vilão ?",
+  "title":"Qual linguagem de programação seria ideal para você ?",
   "questions":[
     {
       "id":1,
-      "question": "Qual super poder você escolheria ?",
+      "question": "Qual seu nivel de experiência em programação?",
       "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
-      ]
+        {"id": 1, "name":"Iniciante", "alias":"D"},
+        {"id": 2, "name":"Intermediario", "alias":"D"},
+        {"id": 3, "name":"Avançado", "alias":"D"}      ]
     },
     {
       "id":2,
-      "question": "Quem você salvaria primeiro ?",
+      "question": "Qual é o seu nível de interesse em matemática e lógica?",
       "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
+        {"id": 1, "name":"Muito interessado, adoro resolver problemas matemáticos e lógicos", "alias":"C"},
+        {"id": 2, "name":"Interessado, mas não é o meu ponto forte", "alias":"D"}
       ]
     },
     {
       "id":3,
-      "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
+      "question": "Você se considera uma pessoa criativa?",
       "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
+        {"id": 1, "name":"Sim, sou criativo e gosto de encontrar soluções únicas", "alias":"A"},
+        {"id": 2, "name":"Sou mais voltado para a lógica do que para a criatividade", "alias":"C"}
       ]
     },
     {
       "id":4,
-      "question": "Qual o seu maior foco ?",
+      "question": "Qual é a sua atitude em relação a lidar com desafios e problemas complexos?",
       "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
+        {"id": 1, "name":"Gosto de desafios e me sinto motivado a resolvê-los", "alias":"B"},
+        {"id": 2, "name":"Prefiro evitar problemas complexos, busco projetos mais simples", "alias":"A"}
       ]
     },
     {
       "id":5,
-      "question": "Qual o seu apelido de super ser ?",
+      "question": "Você tem interesse em aumentar a produtividade por meio de automações de tarefas?",
       "options":[
-        {"id": 1, "name":"O Terrivel", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
+        {"id": 1, "name":"Sim, estou sempre em busca de maneiras de ser mais produtivo.", "alias":"D"},
+        {"id": 2, "name":"Não vejo necessidade de automações, prefiro fazer as tarefas manualmente.", "alias":"B"}
+      ]
+    },
+    {
+      "id":6,
+      "question": "Qual seria seu principal objetivo ao aprender uma nova Linguagem de Programação?",
+      "options":[
+        {"id": 1, "name":"Desenvolvimento Web", "alias":"A"},
+        {"id": 2, "name":"Desenvolvimento Mobile", "alias":"B"},
+        {"id": 3, "name":"Ciência e analise de dados", "alias":"C"},
+        {"id": 4, "name":"Automação de Tarefas", "alias":"D"}
+      ]
+    },
+    {
+      "id":7,
+      "question": "Se você fosse criar uma aplicação e pudesse escolher apenas uma característica principal, qual seria?",
+      "options":[
+        {"id": 1, "name":"Interface intuitiva e rápida", "alias":"A"},
+        {"id": 2, "name":"Capacidade de processamento de dados", "alias":"C"},
+        {"id": 3, "name":"Conteúdo Viciante", "alias":"B"},
+        {"id": 4, "name":"Eficiência no que se propõe a fazer", "alias":"D"}
+      ]
+    },
+    {
+      "id":9,
+      "question": "Você prefere uma linguagem de programação com uma grande comunidade e muitas bibliotecas disponiveis ou uma linguagem mais especializada, mas com seus recursos limitados?",
+      "options":[
+        {"id": 1, "name":"Uma linguagem com uma grande comunidade e muitas bibliotecas disponiveis", "alias":"E"},
+        {"id": 2, "name":"Uma linguagem mais especializada, mesmo com recursos limitados", "alias":"F"}
       ]
     }
   ],
+
   "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+    "A": ["Desenvolvimento Web", "Descrição: O desenvolvimento web é uma área em constante crescimento, envolvendo a criação de sites e aplicativos web interativos. É uma carreira versátil e em alta demanda, com oportunidades de trabalho em empresas de tecnologia, agências digitais e empreendimentos próprios."],
+    "B": ["Desenvolvimento de Aplicativos Móveis", "Descrição: O desenvolvimento de aplicativos móveis oferece a oportunidade de criar aplicativos para smartphones e tablets, seja para plataformas iOS ou Android. É uma carreira dinâmica e inovadora, com uma demanda crescente por profissionais capacitados para criar experiências móveis envolventes."],
+    "C": ["Ciência de Dados e Análise", "Descrição: A ciência de dados e análise é uma área em rápido crescimento, que envolve a extração de informações valiosas a partir de grandes conjuntos de dados. Os profissionais dessa área aplicam técnicas estatísticas e algoritmos de aprendizado de máquina para obter insights e auxiliar na tomada de decisões em diversas indústrias."],
+    "D": ["Automação de Tarefas", "Descrição: A automação de tarefas é uma carreira que envolve a criação de soluções automatizadas para simplificar processos e tarefas repetitivas. Os profissionais dessa área desenvolvem scripts e programas para agilizar fluxos de trabalho, melhorar a eficiência e reduzir erros humanos."],
+    "E": {
+      "A": ["Linguagem sugerida:", "JavaScript", "Descrição: JavaScript é amplamente utilizado no desenvolvimento web, permitindo interações dinâmicas e recursos avançados no lado do cliente. Com bibliotecas populares como React e Angular, JavaScript é uma escolha ideal para desenvolvedores web."],
+      "B": ["Linguagem sugerida:", "Kotlin", "Descrição: Kotlin é uma linguagem moderna e oficialmente suportada pelo desenvolvimento de aplicativos Android. Com uma sintaxe concisa e recursos avançados, Kotlin tornou-se uma escolha popular para desenvolver aplicativos móveis Android."],
+      "C": ["Linguagem sugerida:", "Python", "Descrição: Python é amplamente utilizado em ciência de dados, fornecendo uma grande variedade de bibliotecas e ferramentas para análise de dados, aprendizado de máquina e visualização. Sua sintaxe legível e versatilidade fazem dela uma escolha popular para cientistas de dados."],
+      "D": ["Linguagem sugerida:", "Python", "Descrição: Python é conhecido por sua simplicidade e capacidade de automação. Com bibliotecas como Selenium e Beautiful Soup, Python é uma ótima escolha para automatizar tarefas repetitivas, como extração de dados da web ou manipulação de arquivos."]
+    },
+    "F": {
+      "A": ["Linguagem sugerida:", "JavaScript", "Descrição: JavaScript é amplamente utilizado no desenvolvimento web, permitindo interações dinâmicas e recursos avançados no lado do cliente. Com bibliotecas populares como React e Angular, JavaScript é uma escolha ideal para desenvolvedores web."],
+      "B": ["Linguagem sugerida:", "Java", "Descrição: Java é uma linguagem de programação amplamente usada no desenvolvimento de aplicativos móveis para a plataforma Android. Como parte do Android Software Development Kit (SDK), o Java é usado para escrever a lógica de negócios, a interação com o usuário e a manipulação de dados nos aplicativos Android. Com sua ampla adoção e suporte da comunidade, o Java é uma escolha popular para criar aplicativos móveis com recursos avançados e integração com as APIs do Android."],
+      "C": ["Linguagem sugerida:", "R", "Descrição: R é uma linguagem projetada especificamente para análise estatística e gráficos. É amplamente utilizado em ciência de dados, fornecendo uma variedade de pacotes estatísticos e recursos avançados para análise de dados e visualização."],
+      "D": ["Linguagem sugerida:", "Perl", "Descrição: Perl é uma linguagem de script usada para automatizar tarefas por meio de scripts. Com sua poderosa manipulação de texto e recursos avançados, o Perl é amplamente utilizado para automatizar processos repetitivos e simplificar o trabalho em desenvolvimento, administração de sistemas e processamento de dados."]
+    }
   }
 }

@@ -1,7 +1,18 @@
 .quizz__container{
-  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.quizz__content {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
   margin: auto;
-  margin-top: 20px;
+  position: relative;
 }
 
 .quizz_logo{
@@ -9,7 +20,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  align-self: flex-start;
 }
 
 .quizz_logo > h3{
@@ -28,6 +41,10 @@
   font-size: 20px;
   font-family: 'Segoe UI';
   margin-bottom: 20px;
+}
+
+.quizz_questions h3 {
+  text-align: center;
 }
 
 .quizz_options{
@@ -64,12 +81,40 @@
 
 .quizz_results{
   width: 100%;
-  height: 350px;
+  height: auto;
+  min-height: 500px;
   background-color: #1F0539;
   border-radius: 10px;
-  padding: 30px;
+  padding: 0rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.quizz_results h1 {
+  padding: 1rem;
+}
+
+.resultado {
+  margin: 1rem;
+}
+
+.resultado h2 {
+  color: rgb(63, 167, 167);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px #000;
+}
+.resultado h2 span {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0rem;
+  font-family: monospace;
+}
+.resultado p {
+  font-size: 1rem;
+  font-family: monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

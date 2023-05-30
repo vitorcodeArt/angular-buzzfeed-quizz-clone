@@ -1,28 +1,35 @@
+<div class="quizz_logo">
+  <img src="assets/imgs/logo.png" alt="" srcset="">
+  <h3>{{title}}</h3>
+</div>
 <div class="quizz__container">
+<div class="quizz__content">
 
-  <div class="quizz_logo">
-    <img src="assets/imgs/logo.png" alt="" srcset="">
-    <h3>{{title}}</h3>
-  </div>
+    <div *ngIf=!finished class="quizz_questions">
+        <h3>{{questionSelected.question}}</h3>
+    </div>
 
-  <div *ngIf=!finished class="quizz_questions">
-      <h3>{{questionSelected.question}}</h3>
-  </div>
+    <div *ngIf=!finished class="quizz_options">
 
-  <div *ngIf=!finished class="quizz_options">
+      <button
+        *ngFor="let option of questionSelected.options; let i = index"
+        (click)="playerChoose(option.alias)"
+        class="btn-option"
+      >
+        {{option.name}}
+      </button>
 
-    <button
-      *ngFor="let option of questionSelected.options; let i = index"
-      (click)="playerChoose(option.alias)"
-      class="btn-option"
-    >
-      {{option.name}}
-    </button>
+    </div>
 
-  </div>
+    <div *ngIf=finished class="quizz_results">
+      <h1>O Seu resultado é:</h1>
+    <div class="resultado">
+      <h2>{{ carreira }}</h2>
+      <p>{{ carreira_description }}</p>
+      <h2>{{ linguagem[0] }} <span>{{ linguagem[1] }}</span></h2>
+      <p>{{ linguagem_description }}</p>
+    </div>
 
-  <div *ngIf=finished class="quizz_results">
-    <h1>O Seu resultado é:</h1>
-    <p>{{answerSelected}}</p>
-  </div>
+    </div>
+</div>
 </div>
